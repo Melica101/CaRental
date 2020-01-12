@@ -34,5 +34,4 @@ func NewCar(name, model, color, transmission, fuelType, fuelUsage, plateNumber, 
 		Photo:        photo}
 
 	return &car
-
 }
