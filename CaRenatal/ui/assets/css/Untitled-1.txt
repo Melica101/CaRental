@@ -1,0 +1,39 @@
+<!-- ============ HEADER ============ -->
+<header id="header" class="header active-section">
+	<div class="container clearfix">
+		
+		<div class="row">
+			<div class="col-md-5 col-sm-5 logo-container">
+				<!-- LOGO -->
+				<img src="assets/images/logo.png" alt="TourBigg" class="img-responsive animated pulse" id="breath">
+			</div>
+			<div class="col-md-7 col-sm-7 page-headings">
+				<h2 class="animated flash" id="flash">FIND BEST</h2>
+				<h1 class="animated rubberBand" id="streach">RENTAL CAR</h1>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-7 col-sm-7 hero-img">
+				<!-- HERO IMAGE -->
+				<img src="assets/images/redcar.png" alt="Find Best Rental Car" class="img-responsive">
+			</div>
+			<div class="col-md-5 col-sm-5 hero-data">
+				<a href="mailto:hello@tourbigg.com" class="mail-link" title="Email Us">hello@tourbigg.com</a>
+				<a href="tel:+94767070990" class="link-button-big" title="Call Us">+9476 70 70 990</a>
+				<h4>ARE YOU LOOKING FOR</h4>
+				<h3>A COOL CAR?</h3>
+				<strong><i>Like No Other!</i></strong>
+			</div>
+		</div>
+		
+		<div class="row hero-buttons">
+			<a href="#section8" class="thin-link">SEE BELOW TO SUBMIT A REQUEST</a>
+			<span class="down-arrow">
+				<a href="#section1"><img src="assets/images/icons/arrow-2.png" alt="See Below" id="floating2"></a>
+		    </span>
+		</div>
+		
+	</div>
+</header>
+<!-- ======== END HEADER ======== -->
