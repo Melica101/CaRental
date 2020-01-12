@@ -31,6 +31,10 @@ func About(w http.ResponseWriter, r *http.Request) {
 	Temp.ExecuteTemplate(w, "whoweare.html", nil)
 }
 
+func Rent(w http.ResponseWriter, r *http.Request) {
+	Temp.ExecuteTemplate(w, "rent.html", nil)
+}
+
 func main() {
 
 	mux := http.NewServeMux()
@@ -44,6 +48,7 @@ func main() {
 	mux.HandleFunc("/login", Login)
 	mux.HandleFunc("/signup", Signup)
 	mux.HandleFunc("/about", About)
+	mux.HandleFunc("/rent", Rent)
 
 	server := http.Server{
 		Addr:    ":8080",
