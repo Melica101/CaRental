@@ -1,0 +1,87 @@
+/* Medium Layout: 1280px. */
+ @media only screen and (min-width: 992px) and (max-width: 1200px) {
+     .single-slider h1 {
+         font-size: 42px;
+    }
+}
+/* Tablet Layout: 768px. */
+ @media only screen and (min-width: 768px) and (max-width: 991px) {
+     .sh-mainmenu .navbar-nav {
+         text-align: center;
+    }
+     .sh-mainmenu {
+         float: left;
+         padding: 10px 0px;
+    }
+}
+/* Mobile Layout: 320px. */
+ @media only screen and (max-width: 767px) {
+     .sh-mainmenu .navbar-nav {
+         text-align: center;
+    }
+     .sh-mainmenu {
+         float: left;
+         padding: 10px 0px;
+    }
+     .section-padding {
+         padding-top: 70px;
+         padding-bottom: 50px;
+    }
+     .pro-webtitle h2 {
+         font-size: 30px;
+    }
+     .header-top-add {
+         text-align: left;
+         font-size: 14px;
+         margin-top: 15px;
+    }
+     .header-top-add span {
+         margin-left: 10px;
+    }
+     .header-top-wrap {
+         position: relative;
+    }
+     .single-slider h1 {
+         font-size: 32px;
+    }
+     .single-slider p {
+         font-size: 16px;
+    }
+     .single-slider {
+         height: 450px;
+    }
+     .slider-table {
+         height: 450px;
+    }
+     .welcome-text h2 {
+         font-size: 30px;
+         margin: 0 0 30px;
+    }
+     .single-service-block {
+         text-align: center;
+    }
+     .single-service-block h3 {
+         font-size: 25px;
+    }
+     .booking-form-block {
+         text-align: center;
+    }
+     .booking-right-side-text h2 {
+         font-size: 30px;
+    }
+     .booking-right-side-text {
+         padding: 0;
+         margin-top: 30px;
+    }
+     .footer-wid {
+         margin-bottom: 40px;
+    }
+     .footer-copy-text, .footer-design-text {
+         font-size: 15px;
+         margin: 5px 0;
+    }
+}
+/* Wide Mobile Layout: 480px. */
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+ 
