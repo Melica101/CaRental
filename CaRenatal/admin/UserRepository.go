@@ -339,7 +339,6 @@ func (psql *Repository) SearchMember(tableName string, columnValue string) bool 
 		return true
 	}
 	return false
-
 }
 
 // GetOwner is a method that returns the owner of a project by searching through the project user table.
