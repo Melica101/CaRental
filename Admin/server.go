@@ -42,7 +42,6 @@ func Test(w http.ResponseWriter, r *http.Request) {
 func main() {
 
 	mux := http.NewServeMux()
-
 	fileServer := http.FileServer(http.Dir("templates"))
 	mux.Handle("/templates/", http.StripPrefix("/templates/", fileServer))
 
