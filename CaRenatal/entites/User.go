@@ -1,6 +1,6 @@
 package entities
 
-// User is a struct that defines the type User.
+// User is a struct that defines the type User
 type User struct {
 	ID          int
 	Firstname   string
