@@ -5,6 +5,7 @@ import (
 	"net/http"
 )
 
+
 var Temp = template.Must(template.ParseGlob("ui/*.html"))
 
 func CheckTemplate(w http.ResponseWriter, r *http.Request) {
