@@ -1,0 +1,176 @@
+#breath {
+	-webkit-animation-duration: 1.5s;
+		 	animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+}
+
+#flash {
+	-webkit-animation-duration: 2s;
+		 	animation-duration: 2s;
+	-webkit-animation-iteration-count: 3;
+			animation-iteration-count: 3;
+}
+
+#streach {
+	-webkit-animation-duration: 1.5s;
+		 	animation-duration: 1.5s;
+	-webkit-animation-iteration-count: 2;
+			animation-iteration-count: 2;
+}
+
+
+#floating2 {
+  -webkit-animation: floating 1.5s linear infinite;
+  		  animation: floating 1.5s linear infinite;
+
+}
+
+@keyframes floating2 {
+	0%{transform:translateX(0%)}
+	50%{transform:translateZ(10px) translateY(15px)}
+	100%{transform:translateX(0%)}
+}
+
+@-webkit-keyframes floating2 {
+	0%{-webkit-transform:translateX(0%)}
+	50%{-webkit-transform:translateZ(10px) translateY(15px)}
+	100%{-webkit-transform:translateX(0%)}
+}
+
+
+.car {
+   -webkit-animation: movingCar 20s linear infinite;
+		   animation: movingCar 20s linear infinite;
+}
+
+@keyframes movingCar {
+    from { transform: translateX(-700px); }
+    to { transform: translateX(2200px); }
+}
+
+@-webkit-keyframes movingCar {
+    from { -webkit-transform: translateX(-700px); }
+    to { -webkit-transform: translateX(2200px); }
+} 
+
+
+.moveSocial {
+   -webkit-animation: movingSocialIcons 67s linear infinite;
+   		   animation: movingSocialIcons 67s linear infinite;
+    -webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+}
+
+.moveSocial:hover {
+	-webkit-animation-play-state: paused;
+	        animation-play-state: paused;
+}
+
+@keyframes movingSocialIcons {
+    from { transform: translateX(1500px); }
+    to { transform: translateX(-1000px); }
+}
+
+@-webkit-keyframes movingSocialIcons {
+    from { -webkit-transform: translateX(1500px); }
+    to { -webkit-transform: translateX(-1000px); }
+} 
+
+
+.road {
+	background-repeat: repeat-x;
+	-webkit-animation: movingBackground 8s linear infinite;
+			animation: movingBackground 8s linear infinite;
+}
+
+@keyframes movingBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+@-webkit-keyframes movingBackground {
+    from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+} 
+
+
+.bgmove {
+	background-repeat: repeat-x;
+	-webkit-animation: movingBackground2 10s linear infinite;
+			animation: movingBackground2 10s linear infinite;
+}
+
+@keyframes movingBackground2 {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+@-webkit-keyframes movingBackground2 {
+    from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+} 
+
+
+@media (max-width: 1100px) {
+	.bgmove {
+		-webkit-animation-duration: 40s !important;
+		 		animation-duration: 40s !important;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.bgmove {
+		-webkit-animation-duration: 40s !important;
+		 		animation-duration: 40s !important;
+	}
+	
+	.roade {
+		-webkit-animation-duration: 1s !important;
+		 		animation-duration: 1s !important;
+	}
+	
+	.car {
+		-webkit-animation-duration: 25s !important;
+		 		animation-duration: 25s !important;
+	}
+	
+	@keyframes movingSocialIcons {
+		from { transform: translateX(767px); }
+		to { transform: translateX(-1000px); }
+	}
+	
+	@-webkit-keyframes movingSocialIcons {
+		from { -webkit-transform: translateX(767px); }
+		to { -webkit-transform: translateX(-1000px); }
+	} 
+}
+
+
+@media (max-width: 560px) {
+	@keyframes movingSocialIcons {
+		from { transform: translateX(560px); }
+		to { transform: translateX(-1000px); }
+	}
+	
+	@-webkit-keyframes movingSocialIcons {
+		from { -webkit-transform: translateX(560px); }
+		to { -webkit-transform: translateX(-1000px); }
+	} 
+}
+
+
+@media (max-width: 480px) {
+	@keyframes movingSocialIcons {
+		from { transform: translateX(480px); }
+		to { transform: translateX(-1000px); }
+	}
+	
+	@-webkit-keyframes movingSocialIcons {
+		from { -webkit-transform: translateX(480px); }
+		to { -webkit-transform: translateX(-1000px); }
+	} 
+}
+
+
