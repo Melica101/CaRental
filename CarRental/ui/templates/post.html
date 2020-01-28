@@ -1,0 +1,212 @@
+{{ define "post.layout" }}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Rent</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="../ui/assets/img/CRicon.jpg" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../ui/vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../ui/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../ui/assets/fonts/iconic/css/material-design-iconic-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../ui/assets/vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../ui/assets/vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../ui/assets/vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../ui/assets/vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../ui/assets/vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../ui/assets/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../ui/assets/css/main.css">
+	<!--===============================================================================================-->
+</head>
+
+<body>
+	<div class="limiter" style="background-color: #4869ff;">
+
+		<div class="container-login100">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+				<img class="img" src="../ui/assets/img/CRLogo.png" alt="" width="400" height="200">
+				<form class="login100-form validate-form">
+
+
+                    <span class="login100-form-title p-b-49">
+						POST YOUR CAR
+					</span>
+					<hr>
+					<h6>Fill The Following Form to Post Your Car...<br></h6>
+					<hr>
+					<br><br>
+                
+                {{if .CSRF}}
+                <input type="hidden" name="_csrf" value="{{ .CSRF }}" />
+                {{else}}
+                <input type="hidden" name="_csrf" value='{{.Values.Get "_csrf" }}' />
+                {{end}}
+    
+                <form class="contact100-form validate-form">
+                    <div class="wrap-input100 validate-input" data-validate="Name is required">
+                        <span class="label-input100">Name:</span>
+                        <input class="input100" type="text" name="name" placeholder="Enter name of the car">
+                        <span class="focus-input100"></span>
+                        <span>
+                            {{with .VErrors.Get "name" }}
+                            <label class="text-danger">{{ . }}</label>
+                            {{end}}
+                        </span>
+                    </div>
+    
+                    <div class="wrap-input100 validate-input" data-validate="Mode number is required.">
+                        <span class="label-input100">Model:</span>
+                        <input class="input100" type="text" name="model" placeholder="Enter the model of the car">
+                        <span class="focus-input100"></span>
+                        <span>
+                            {{with .VErrors.Get "model" }}
+                            <label class="text-danger">{{ . }}</label>
+                            {{end}}
+                        </span>
+                    </div>
+    
+                    <div class="wrap-input100 validate-input" data-validate="year is required">
+                        <span class="label-input100">Year:</span>
+                        <input class="input100" type="date" name="year" placeholder="Enter year of manufactury">
+                        <span class="focus-input100"></span>
+                        <span>
+                            {{with .VErrors.Get "year" }}
+                            <label class="text-danger">{{ . }}</label>
+                            {{end}}
+                        </span>
+                    </div>
+    
+                    <div class="wrap-input100 validate-input" data-validate="Color is required">
+                        <span class="label-input100">Color:</span>
+                        <input class="input100" type="text" name="color" placeholder="Enter the color of the car"></input>
+                        <span class="focus-input100"></span>
+                        <span>
+                            {{with .VErrors.Get "color" }}
+                            <label class="text-danger">{{ . }}</label>
+                            {{end}}
+                        </span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Transmission is required">
+                        <span class="label-input100">Transmission:</span>
+                        <input class="input100" type="text" name="transmission"
+                            placeholder="Enter the transmission of the car"></input>
+                        <span class="focus-input100"></span>
+                        <span>
+                            {{with .VErrors.Get "transmission" }}
+                            <label class="text-danger">{{ . }}</label>
+                            {{end}}
+                        </span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Fuel type is required">
+                        <span class="label-input100">Fuel Type:</span>
+                        <input class="input100" type="text" name="fueltype"
+                            placeholder="Enter the fuel type of the car"></input>
+                        <span class="focus-input100"></span>
+                        <span>
+                            {{with .VErrors.Get "fueltype" }}
+                            <label class="text-danger">{{ . }}</label>
+                            {{end}}
+                        </span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Fuel usage is required">
+                        <span class="label-input100">Fuel Usage:</span>
+                        <input class="input100" type="text" name="fuelusage"
+                            placeholder="Enter the fuel usage of the car"></input>
+                        <span class="focus-input100"></span>
+                        <span>
+                            {{with .VErrors.Get "fuelusage" }}
+                            <label class="text-danger">{{ . }}</label>
+                            {{end}}
+                        </span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Number of seats is required">
+                        <span class="label-input100">Seats Number:</span>
+                        <input class="input100" type="text" name="seats"
+                            placeholder="Enter the number of seats of the car"></input>
+                        <span class="focus-input100"></span>
+                        <span>
+                            {{with .VErrors.Get "seats" }}
+                            <label class="text-danger">{{ . }}</label>
+                            {{end}}
+                        </span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Plate number is required">
+                        <span class="label-input100">Plate Number:</span>
+                        <input class="input100" type="text" name="platenumber"
+                            placeholder="Enter the plate number of the car"></input>
+                        <span class="focus-input100"></span>
+                        <span>
+                            {{with .VErrors.Get "platenumber" }}
+                            <label class="text-danger">{{ . }}</label>
+                            {{end}}
+                        </span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="price is required">
+                        <span class="label-input100">Price:</span>
+                        <input class="input100" type="text" name="price" placeholder="Enter the price of the car"></input>
+                        <span class="focus-input100"></span>
+                        <span>
+                            {{with .VErrors.Get "price" }}
+                            <label class="text-danger">{{ . }}</label>
+                            {{end}}
+                        </span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Photo of the car is required">
+                        <span class="label-input100">Photo:</span>
+                        <input type="file" name="photo" accept="image/png, image/jpeg"></input>
+                        <span class="focus-input100"></span>
+                        <span>
+                            {{with .VErrors.Get "photo" }}
+                            <label class="text-danger">{{ . }}</label>
+                            {{end}}
+                        </span>
+                    </div>
+    
+                    <div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+
+							<button class="login100-form-btn">
+								POST
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+	<!--===============================================================================================-->
+	<script src="../ui/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../ui/assets/vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../ui/assets/vendor/bootstrap/js/popper.js"></script>
+	<script src="../ui/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../ui/assets/vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="../ui/assets/vendor/daterangepicker/moment.min.js"></script>
+	<script src="../ui/assets/vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script src="../ui/assets/vendor/countdowntime/countdowntime.js"></script>
+	<!--===============================================================================================-->
+	<script src="../ui/assets/js/main1.js"></script>
+</body>
+
+</html>
+{{end}}
