@@ -2,7 +2,7 @@ package entities
 
 import "time"
 
-// Car is a car structure.
+// Car is a car structure
 type Car struct {
 	ID           string
 	Name         string
