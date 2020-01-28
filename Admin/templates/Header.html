@@ -1,29 +1,53 @@
-<div class="brand clearfix" style="background-color: #232323;">
-    <a href="/admin" style="position:absolute; left: 250px; padding-top:10px; font-size: 20px; ">CRMS |
-        Admin Panel</a>
-    <span class="menu-btn"><i class="fa fa-bars"></i></span>
-    <ul class="ts-profile-nav">
 
-        <li class="ts-account">
-            <a href="#" style="background-color: #232323;"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side"
-                    alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a>
-            <ul>
-                <li><a href="/login">Logout</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
 
-<div class="ts-main-content">
-    <nav class="ts-sidebar" style="background-color: #232323;">
-        <ul class="ts-sidebar-menu">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin</title>
 
-            <li class="ts-label">Main</li>
-            <li><a href="/admin"> Home</a></li>
-            <li><a href="/manageV">Manage Vehicles</a></li>
-            <li><a href="/manageR"> Manage Reservations</a></li>
-            <li><a href="/feed"> Feedback</a></li>
-            <li><a href="/add"> Add Payment</a></li>
+    <link rel="stylesheet" href="../templates/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../templates/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../templates/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="../templates/css/bootstrap-social.css">
+    <link rel="stylesheet" href="../templates/css/bootstrap-select.css">
+    <link rel="stylesheet" href="../templates/css/fileinput.min.css">
+    <link rel="stylesheet" href="../templates/css/awesome-bootstrap-checkbox.css">
+    <link rel="stylesheet" href="../templates/css/style.css">
 
+
+</head>
+<body>
+    <div class="brand clearfix" style="background-color: #232323;">
+        <a href="/admin" style="position:absolute; left: 250px; padding-top:10px; font-size: 20px; ">CRMS |
+            Admin Panel</a>
+        <span class="menu-btn"><i class="fa fa-bars"></i></span>
+        <ul class="ts-profile-nav">
+    
+            <li class="ts-account">
+                <a href="#" style="background-color: #232323;"><img src="img/login-bg.jpg" class="ts-avatar hidden-side"
+                        alt="CaRental"> Account <i class="fa fa-angle-down hidden-side"></i></a>
+                <ul>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </li>
         </ul>
-    </nav>
+    </div>
+    
+    <div class="ts-main-content">
+        <nav class="ts-sidebar" style="background-color: #232323;">
+            <ul class="ts-sidebar-menu">
+    
+                <li class="ts-label">Main</li>
+                <li><a href="adminhome.html"> Home</a></li>
+                <li><a href="manageV.html">Manage Vehicles</a></li>
+                <li><a href="manageR.html"> Manage Reservations</a></li>
+                <li><a href="feedback.html"> Feedback</a></li>
+                <li><a href="addpayment.html"> Add Payment</a></li>
+    
+            </ul>
+        </nav>
+</body>
+</html>
