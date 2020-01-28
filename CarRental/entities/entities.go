@@ -9,7 +9,6 @@ import (
 //Car is car structure
 type Car struct {
 	gorm.Model
-	ID           string
 	Name         string `gorm:"type:varchar(255);not null"`
 	CarModel     string
 	Year         time.Time
@@ -26,14 +25,13 @@ type Car struct {
 //Admin is admin struct
 type Admin struct {
 	gorm.Model
-	ID       int
 	Name     string `gorm:"type:varchar(255);not null"`
 	Password string
 }
 
 //Role is role struct
 type Role struct {
-	ID   uint
+	ID uint
 	Name string `gorm:"type:varchar(255)"`
 }
  
@@ -49,7 +47,6 @@ type Session struct {
 //User is user struct
 type User struct {
 	gorm.Model
-	ID          uint
 	Firstname   string `gorm:"type:varchar(255);not null"`
 	Lastname    string `gorm:"type:varchar(255);not null"`
 	Password    string `gorm:"type:varchar(255)"`
